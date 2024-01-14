@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <h2>Ajouter utilisateur</h2>
+  <form  [formGroup]="addForm" (ngSubmit)="adduser(addForm.value)">
+    <div class="mb-3 mt-3">
+      <label for="adduser">Username:</label>
+      <input  type="text" name="adduser" class="form-control" id="adduser" placeholder="Enter username" formControlName="lg">
+    </div>
+    <div class="mb-3">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" formControlName="pwd">
+    </div>
+    <button type="submit" class="btn btn-primary" value="AddUser">Ajouter utilisateur</button>
+  </form>
+</div>

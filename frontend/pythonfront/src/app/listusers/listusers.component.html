@@ -1,0 +1,14 @@
+<h2>Liste des utilisateurs</h2>
+<mat-divider></mat-divider> <br> 
+<div *ngFor="let u of users" style="display:inline-block; margin-left: auto; margin-right: auto;">
+<mat-card class="example-card" >
+  <mat-card-subtitle class="subtitle">Nom utilisateur</mat-card-subtitle>
+  <mat-card-title>{{u.user}}</mat-card-title>
+  <mat-card-content>
+    <p>
+      <button mat-raised-button color="warn" (click)="deleteUser(u.user)">Supprimer</button>
+    </p>
+  </mat-card-content>
+</mat-card>
+
+</div>
